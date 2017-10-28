@@ -13,7 +13,9 @@ export default class PhotoView extends Component {
                 contentContainerStyle={{ alignItems:'center', justifyContent:'center' }}
                 centerContent={true}
                 maximumZoomScale={this.props.maximumZoomScale}
-                minimumZoomScale={this.props.minimumZoomScale}>
+                minimumZoomScale={this.props.minimumZoomScale}
+                scrollEnabled={false}
+            >
 
                 <TouchableWithoutFeedback
                     onPress={this.props.onTap ? this.props.onTap : function() {}}>
